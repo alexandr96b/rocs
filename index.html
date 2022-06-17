@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>ROCS WEB</title>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="title" content=""/>
+    <meta name="description" content=""/>
+    <link href=fav.svg rel=”shortcut icon” type=”image/x-icon”>
+    <link rel="shortcut icon" href="#">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/webp"/>
+    <link href="css/style.min.css" rel="stylesheet">
+
+</head>
+<body>
+<script>
+    function openIng(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("js-tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("js-tab-trigger");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the link that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+<div class="b-container">
+    <div class="b-header">
+        <div class="container">
+            <div class="b-logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <nav class="b-nav">
+                <ul>
+                    <li><a href="#product">Products</a></li>
+                    <li><a href="#ingridients">Ingridients</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#buy">Where to buy</a></li>
+                </ul>
+                <ul class="nav-xs">
+                    <li><a href="#promo">Home</a></li>
+                    <li><a href="#ingridients">Ingridients</a></li>
+                    <li><a href="#buy">Where to buy</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#footer">Contacts</a></li>
+                    <li><a href="#follow">Follow</a></li>
+                </ul>
+            </nav>
+            <div class="b-mobile">
+                <div class="menu-icon">
+                    <div class="menu-icon__wrapper">
+                        <span class="b-menu__icon">
+                            <i class="b-menu__line b-menu__line_1"></i>
+                            <i class="b-menu__line b-menu__line_2"></i>
+                            <i class="b-menu__line b-menu__line_3"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="b-promo" id="promo">
+        <div class="container">
+            <div class="wrapper">
+                <div class="b-promo__ellipse"></div>
+                <div class="b-promo__slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="b-promo__top">
+                                <div class="b-promo__top-desc">Safe natural care at the cutting edge of science
+                                </div>
+                                <h1 class="b-title">Innovation & Expertise<br/>
+                                    for your smile</h1>
+                                <p>We improve people’s health and quality of life<br/> by producing unique oral care products</p>
+                            </div>
+                            <div class="b-promo__btns">
+                                <a href="" class="ripple b-btn">shop now</a>
+                            </div>
+                            <div class="b-promo__img">
+                                <img src="img/img.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="b-promo__top">
+                                <div class="b-promo__top-desc">Safe natural care at the cutting edge of science
+                                </div>
+                                <h1 class="b-title">Innovation & Expertise<br/>
+                                    for your smile</h1>
+                                <p>We improve people’s health and quality of life<br/> by producing unique oral care products</p>
+                            </div>
+                            <div class="b-promo__btns">
+                                <a href="" class="ripple b-btn">shop now</a>
+                            </div>
+                            <div class="b-promo__img">
+                                <img src="img/img.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="b-promo__top">
+                                <div class="b-promo__top-desc">Safe natural care at the cutting edge of science
+                                </div>
+                                <h1 class="b-title">Innovation & Expertise<br/>
+                                    for your smile</h1>
+                                <p>We improve people’s health and quality of life<br/> by producing unique oral care products</p>
+                            </div>
+                            <div class="b-promo__btns">
+                                <a href="" class="ripple b-btn">shop now</a>
+                            </div>
+                            <div class="b-promo__img">
+                                <img src="img/img.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="b-product" id="product">
+        <div class="container">
+            <div class="b-product__row">
+                <div class="b-product__row-col">
+                    <div class="b-product__item">
+                        <div class="b-product__item-left">
+                            <div class="b-product__item-name">Kids oral care</div>
+                            <ul>
+                                <li><a href="">Baby  0-3 y.o.</a></li>
+                                <li><a href="">Kids  3-7 y.o.</a></li>
+                                <li><a href="">Junior  8-12 y.o.</a></li>
+                                <li><a href="">Teens  12-18 y.o.</a></li>
+                            </ul>
+                        </div>
+                        <div class="b-product__item-img">
+							<img src="img/product.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="b-product__row-col">
+                    <div class="b-product__item">
+                        <div class="b-product__item-left">
+                            <div class="b-product__item-name">Adults oral care</div>
+                            <ul>
+                                <li><a href="">Whitening</a></li>
+                                <li><a href="">sensetive</a></li>
+                                <li><a href="">PRO</a></li>
+                                <li><a href="">Regular</a></li>
+                                <li><a href="">Gum care</a></li>
+                            </ul>
+                        </div>
+                        <div class="b-product__item-img">
+                            <img src="img/product2.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="b-product__row-col">
+                    <div class="b-product__item">
+                        <div class="b-product__item-left">
+                            <div class="b-product__item-name">Minerals care</div>
+                            <ul>
+                                <li><a href="">Children</a></li>
+                                <li><a href="">Adult</a></li>
+                                <li><a href="">Sensetive</a></li>
+                            </ul>
+                        </div>
+                        <div class="b-product__item-img">
+                            <img src="img/product3.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="b-product__row-col">
+                    <div class="b-product__item">
+                        <div class="b-product__item-left">
+                            <div class="b-product__item-name">Additional care</div>
+                            <ul>
+                                <li><a href="">Mouthwash</a></li>
+                                <li><a href="">Floss</a></li>
+                                <li><a href="">Spray</a></li>
+                            </ul>
+                        </div>
+                        <div class="b-product__item-img">
+                            <img src="img/product4.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-product__bottom">
+                <a href="" class="b-btn ripple">shop all</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="b-block b-block_first">
+        <div class="container">
+            <div class="wrapper">
+                <div class="b-block__text">
+                    <div class="b-heading">Make your smile a sensation</div>
+                    <p>Pleasure with effectiveness twice a day</p>
+                </div>
+                <div class="b-block__img"><img src="img/girl.webp" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="b-best">
+        <div class="b-heading">Best sellerss</div>
+        <div class="b-best__block" id="best-container">
+            <div class="b-best__block-row">
+                <div class="b-best__item">
+                    <div class="b-best__item-hover">
+                        <ul>
+                            <li>Toothpaste</li>
+                            <li class="wh">R.O.C.S.</li>
+                            <li>BIOCOMPLEX</li>
+                            <li>Active Protection</li>
+                        </ul>
+                        <div class="b-best__item-row">
+                            <div class="b-best__item-price">$<b>12</b></div>
+                            <a href="" class="b-best__item-btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-best__item">
+                    <div class="b-best__item-hover">
+                        <ul>
+                            <li>Toothpaste</li>
+                            <li class="wh">R.O.C.S.</li>
+                            <li>BIOCOMPLEX</li>
+                            <li>Active Protection</li>
+                        </ul>
+                        <div class="b-best__item-row">
+                            <div class="b-best__item-price">$<b>12</b></div>
+                            <a href="" class="b-best__item-btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-best__item">
+                    <div class="b-best__item-hover">
+                        <ul>
+                            <li>Toothpaste</li>
+                            <li class="wh">R.O.C.S.</li>
+                            <li>BIOCOMPLEX</li>
+                            <li>Active Protection</li>
+                        </ul>
+                        <div class="b-best__item-row">
+                            <div class="b-best__item-price">$<b>12</b></div>
+                            <a href="" class="b-best__item-btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-best__item">
+                    <div class="b-best__item-hover">
+                        <ul>
+                            <li>Toothpaste</li>
+                            <li class="wh">R.O.C.S.</li>
+                            <li>BIOCOMPLEX</li>
+                            <li>Active Protection</li>
+                        </ul>
+                        <div class="b-best__item-row">
+                            <div class="b-best__item-price">$<b>12</b></div>
+                            <a href="" class="b-best__item-btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-best__item">
+                    <div class="b-best__item-hover">
+                        <ul>
+                            <li>Toothpaste</li>
+                            <li class="wh">R.O.C.S.</li>
+                            <li>BIOCOMPLEX</li>
+                            <li>Active Protection</li>
+                        </ul>
+                        <div class="b-best__item-row">
+                            <div class="b-best__item-price">$<b>12</b></div>
+                            <a href="" class="b-best__item-btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-best__item">
+                    <div class="b-best__item-hover">
+                        <ul>
+                            <li>Toothpaste</li>
+                            <li class="wh">R.O.C.S.</li>
+                            <li>BIOCOMPLEX</li>
+                            <li>Active Protection</li>
+                        </ul>
+                        <div class="b-best__item-row">
+                            <div class="b-best__item-price">$<b>12</b></div>
+                            <a href="" class="b-best__item-btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-best__item">
+                    <div class="b-best__item-hover">
+                        <ul>
+                            <li>Toothpaste</li>
+                            <li class="wh">R.O.C.S.</li>
+                            <li>BIOCOMPLEX</li>
+                            <li>Active Protection</li>
+                        </ul>
+                        <div class="b-best__item-row">
+                            <div class="b-best__item-price">$<b>12</b></div>
+                            <a href="" class="b-best__item-btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-best__item">
+                    <div class="b-best__item-hover">
+                        <ul>
+                            <li>Toothpaste</li>
+                            <li class="wh">R.O.C.S.</li>
+                            <li>BIOCOMPLEX</li>
+                            <li>Active Protection</li>
+                        </ul>
+                        <div class="b-best__item-row">
+                            <div class="b-best__item-price">$<b>12</b></div>
+                            <a href="" class="b-best__item-btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-best__image">
+                <img src="img/bestsellers.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="b-block pink">
+        <div class="container">
+            <div class="wrapper">
+                <div class="b-block__text">
+                    <div class="b-heading">Every age is special</div>
+                    <p>Targeted solution for different age groups</p>
+                    <a href="" class="b-link">Explore more</a>
+                </div>
+                <div class="b-block__img"><img src="img/baby.webp" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="b-compound">
+        <div class="container">
+            <div class="b-compound__top">
+                <div class="b-heading">Based on natural<br/>
+                    active ingridients</div>
+                <div class="b-compound__top-arrow">
+                    <svg width="307" height="88" viewBox="0 0 307 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <clipPath id="websiteClip">
+                        <path d="M6.3295 78.4688C12.535 70.3376 19.8426 63.0163 28.0657 56.6919C33.2359 52.553 39.1675 48.1815 45.6356 43.7137C52.5318 38.8946 59.7749 34.5359 67.3128 30.669C71.3791 28.6012 75.5858 26.7894 79.9056 25.2454C84.3698 23.5916 88.9837 22.3222 93.6917 21.4525C98.5046 20.5087 103.421 20.1086 108.338 20.2605C113.308 20.3468 118.245 21.0726 123.013 22.4179L123.796 22.6607C123.639 22.8806 123.428 23.0862 123.246 23.3105C116.431 31.8181 112.727 42.2033 112.691 52.9038C112.734 58.3314 113.944 63.6985 116.247 68.6782C118.655 73.8959 122.432 78.4478 127.218 81.8993C129.684 83.7913 132.451 85.3005 135.414 86.37C138.726 87.5917 142.285 88.0835 145.821 87.8082C149.246 87.459 152.552 86.4288 155.522 84.7849C158.493 83.1409 161.06 80.9203 163.058 78.2682C166.673 73.462 168.39 67.6005 167.91 61.7029C167.504 56.3 165.977 51.0213 163.418 46.1686C160.944 41.3763 157.707 36.9711 153.819 33.1084C148.955 28.2979 143.265 24.3039 136.992 21.2979C138.193 20.3208 139.462 19.4207 140.789 18.6035C148.586 13.7284 157.436 10.5598 166.701 9.32705C175.331 8.122 184.11 8.16152 192.739 9.44428C200.281 10.5276 207.658 12.4779 214.709 15.2519C220.643 17.7396 226.332 20.728 231.704 24.1808C240.167 29.5004 247.993 35.6802 255.042 42.6093C259.809 47.2216 264.201 52.1679 268.181 57.4059C271.346 61.6298 273.485 64.792 275.082 67.2847C276.506 69.4251 277.383 70.8729 278.112 71.964L276.256 71.1711C270.965 68.9104 266.139 66.9494 262.028 65.3874C253.809 62.2865 248.416 60.643 247.968 61.5382C247.519 62.4335 251.905 65.3359 259.479 69.487C263.27 71.5856 267.825 73.9546 272.949 76.509L274.892 77.478C275.723 77.9035 276.591 78.2607 277.487 78.5456C278.065 78.7195 278.657 78.8456 279.258 78.9225C280.021 79.0217 280.795 79.0199 281.557 78.917C283.126 78.7051 284.581 78.0242 285.71 76.9734C287.058 75.5504 288.109 73.8985 288.809 72.104L290.793 68.082C301.358 45.5793 308.461 26.789 306.56 26.1479C304.659 25.5068 294.528 43.2114 283.938 65.7186L282.575 68.6948C282.124 67.3781 281.582 66.0907 280.953 64.8409C279.157 61.0787 277.062 57.4498 274.687 53.9857C270.84 48.2456 266.444 42.8509 261.556 37.8698C254.305 30.3565 246.15 23.674 237.257 17.9604C231.421 14.1782 225.228 10.9185 218.757 8.22349C210.984 5.11607 202.836 2.94067 194.502 1.74803C184.885 0.315047 175.1 0.286062 165.487 1.66208C154.775 3.12263 144.555 6.84056 135.58 12.5423C132.987 14.175 130.576 16.0528 128.384 18.1471C127.329 17.8094 126.274 17.4717 125.209 17.2077C119.841 15.7726 114.298 15.0271 108.727 14.9914C103.325 14.9363 97.9382 15.4773 92.6744 16.6034C87.6412 17.6333 82.7191 19.0944 77.9689 20.9688C73.4933 22.6636 69.1423 24.6374 64.9443 26.8772C57.3126 30.9825 50.0134 35.6165 43.1062 40.7415C36.6397 45.4646 30.832 50.0295 25.6829 54.4362C17.556 61.1581 10.5273 68.9841 4.82429 77.6608C3.34625 79.9819 2.05918 82.4078 0.97446 84.9172C0.29144 86.6451 -0.0158627 87.491 0.134434 87.6078C0.284731 87.7246 2.16761 84.1998 6.37828 78.4601L6.3295 78.4688ZM130.536 27.8002C131.037 27.1592 131.596 26.5556 132.155 25.9521C138.257 28.7984 143.758 32.6846 148.379 37.4154C151.746 40.8777 154.536 44.8047 156.652 49.0604C158.77 53.2184 160.002 57.7281 160.277 62.3306C160.564 66.703 159.231 71.0265 156.509 74.5561C155.194 76.3046 153.503 77.7696 151.547 78.8556C149.592 79.9416 147.414 80.6242 145.158 80.8589C140.561 80.9071 136.102 79.3331 132.65 76.4435C128.891 73.6612 125.943 70.0164 124.088 65.8568C122.28 61.7148 121.371 57.2735 121.417 52.7988C121.434 48.3052 122.23 43.8479 123.774 39.6047C125.292 35.3398 127.562 31.3517 130.487 27.8089" fill=""/>
+                            </clipPath>
+                        </defs>
+                        <path class="arrow-animate" clip-path="url(#websiteClip)" d="M6.3295 78.4688C12.535 70.3376 19.8426 63.0163 28.0657 56.6919C33.2359 52.553 39.1675 48.1815 45.6356 43.7137C52.5318 38.8946 59.7749 34.5359 67.3128 30.669C71.3791 28.6012 75.5858 26.7894 79.9056 25.2454C84.3698 23.5916 88.9837 22.3222 93.6917 21.4525C98.5046 20.5087 103.421 20.1086 108.338 20.2605C113.308 20.3468 118.245 21.0726 123.013 22.4179L123.796 22.6607C123.639 22.8806 123.428 23.0862 123.246 23.3105C116.431 31.8181 112.727 42.2033 112.691 52.9038C112.734 58.3314 113.944 63.6985 116.247 68.6782C118.655 73.8959 122.432 78.4478 127.218 81.8993C129.684 83.7913 132.451 85.3005 135.414 86.37C138.726 87.5917 142.285 88.0835 145.821 87.8082C149.246 87.459 152.552 86.4288 155.522 84.7849C158.493 83.1409 161.06 80.9203 163.058 78.2682C166.673 73.462 168.39 67.6005 167.91 61.7029C167.504 56.3 165.977 51.0213 163.418 46.1686C160.944 41.3763 157.707 36.9711 153.819 33.1084C148.955 28.2979 143.265 24.3039 136.992 21.2979C138.193 20.3208 139.462 19.4207 140.789 18.6035C148.586 13.7284 157.436 10.5598 166.701 9.32705C175.331 8.122 184.11 8.16152 192.739 9.44428C200.281 10.5276 207.658 12.4779 214.709 15.2519C220.643 17.7396 226.332 20.728 231.704 24.1808C240.167 29.5004 247.993 35.6802 255.042 42.6093C259.809 47.2216 264.201 52.1679 268.181 57.4059C271.346 61.6298 273.485 64.792 275.082 67.2847C276.506 69.4251 277.383 70.8729 278.112 71.964L276.256 71.1711C270.965 68.9104 266.139 66.9494 262.028 65.3874C253.809 62.2865 248.416 60.643 247.968 61.5382C247.519 62.4335 251.905 65.3359 259.479 69.487C263.27 71.5856 267.825 73.9546 272.949 76.509L274.892 77.478C275.723 77.9035 276.591 78.2607 277.487 78.5456C278.065 78.7195 278.657 78.8456 279.258 78.9225C280.021 79.0217 280.795 79.0199 281.557 78.917C283.126 78.7051 284.581 78.0242 285.71 76.9734C287.058 75.5504 288.109 73.8985 288.809 72.104L290.793 68.082C301.358 45.5793 308.461 26.789 306.56 26.1479C304.659 25.5068 294.528 43.2114 283.938 65.7186L282.575 68.6948C282.124 67.3781 281.582 66.0907 280.953 64.8409C279.157 61.0787 277.062 57.4498 274.687 53.9857C270.84 48.2456 266.444 42.8509 261.556 37.8698C254.305 30.3565 246.15 23.674 237.257 17.9604C231.421 14.1782 225.228 10.9185 218.757 8.22349C210.984 5.11607 202.836 2.94067 194.502 1.74803C184.885 0.315047 175.1 0.286062 165.487 1.66208C154.775 3.12263 144.555 6.84056 135.58 12.5423C132.987 14.175 130.576 16.0528 128.384 18.1471C127.329 17.8094 126.274 17.4717 125.209 17.2077C119.841 15.7726 114.298 15.0271 108.727 14.9914C103.325 14.9363 97.9382 15.4773 92.6744 16.6034C87.6412 17.6333 82.7191 19.0944 77.9689 20.9688C73.4933 22.6636 69.1423 24.6374 64.9443 26.8772C57.3126 30.9825 50.0134 35.6165 43.1062 40.7415C36.6397 45.4646 30.832 50.0295 25.6829 54.4362C17.556 61.1581 10.5273 68.9841 4.82429 77.6608C3.34625 79.9819 2.05918 82.4078 0.97446 84.9172C0.29144 86.6451 -0.0158627 87.491 0.134434 87.6078C0.284731 87.7246 2.16761 84.1998 6.37828 78.4601L6.3295 78.4688ZM130.536 27.8002C131.037 27.1592 131.596 26.5556 132.155 25.9521C138.257 28.7984 143.758 32.6846 148.379 37.4154C151.746 40.8777 154.536 44.8047 156.652 49.0604C158.77 53.2184 160.002 57.7281 160.277 62.3306C160.564 66.703 159.231 71.0265 156.509 74.5561C155.194 76.3046 153.503 77.7696 151.547 78.8556C149.592 79.9416 147.414 80.6242 145.158 80.8589C140.561 80.9071 136.102 79.3331 132.65 76.4435C128.891 73.6612 125.943 70.0164 124.088 65.8568C122.28 61.7148 121.371 57.2735 121.417 52.7988C121.434 48.3052 122.23 43.8479 123.774 39.6047C125.292 35.3398 127.562 31.3517 130.487 27.8089" fill="none" stroke="#95BB5F" stroke-width="10"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="b-compound__row swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="b-compound__item">
+                            <div class="b-compound__item-img">
+                                <img src="img/svg/cp1.svg" alt="">
+                            </div>
+                            <div class="b-compound__item-text">Unique innovative<br/>
+                                products</div>
+                            <div class="b-compound__item-hover">Our products designed for different age groups given the specifics of various age periods.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="b-compound__item">
+                            <div class="b-compound__item-img">
+                                <img src="img/svg/cp2.svg" alt="">
+                            </div>
+                            <div class="b-compound__item-text">Natural<br/>
+                                ingridients</div>
+                            <div class="b-compound__item-hover">We use mostly natural ingredients that are neutral to human body.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="b-compound__item">
+                            <div class="b-compound__item-img">
+                                <img src="img/svg/cp3.svg" alt="">
+                            </div>
+                            <div class="b-compound__item-text">Flouride<br/>
+                                free</div>
+                            <div class="b-compound__item-hover">We developed formula without fluoride with the  same effectiveness as fluoride ones. That makes our products safe.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="b-compound__item">
+                            <div class="b-compound__item-img">
+                                <img src="img/svg/cp4.svg" alt="">
+                            </div>
+                            <div class="b-compound__item-text">Not tasted<br/> on animals</div>
+                            <div class="b-compound__item-hover">We produce cruelty-free products.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="b-compound__item">
+                            <div class="b-compound__item-img">
+                                <img src="img/svg/cp5.svg" alt="">
+                            </div>
+                            <div class="b-compound__item-text">For different<br/> age groups</div>
+                            <div class="b-compound__item-hover">By developing unique patented formulas we bring the art of innovation to a completely new level. We improve people’s health and quality of life.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="b-compound__item">
+                            <div class="b-compound__item-img">
+                                <img src="img/svg/cp6.svg" alt="">
+                            </div>
+                            <div class="b-compound__item-text">Special patented<br/> complex</div>
+                            <div class="b-compound__item-hover">We develop unique complexes bearing in mind special needs and different age groups.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="b-ingridients" id="ingridients">
+        <div class="container">
+            <div class="wrapper">
+                <div class="b-ingridients__left">
+                    <div class="b-ingridients__left-row swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="b-ingridients__left-col swiper-slide">
+                                <div class="b-ingridients__item js-tab-trigger " onmouseover="openIng(event, 'ing1')">
+                                    <div class="b-ingridients__item-img"><img src="img/svg/ing.svg" alt=""></div>
+                                    <div class="b-ingridients__item-name">Xylitol</div>
+                                </div>
+                            </div>
+                            <div class="b-ingridients__left-col swiper-slide">
+                                <div class="b-ingridients__item js-tab-trigger" onmouseover="openIng(event, 'ing2')">
+                                    <div class="b-ingridients__item-img"><img src="img/svg/ing2.svg" alt=""></div>
+                                    <div class="b-ingridients__item-name">Bromelain</div>
+                                </div>
+                            </div>
+                            <div class="b-ingridients__left-col swiper-slide blank"></div>
+                            <div class="b-ingridients__left-col swiper-slide blank"></div>
+                            <div class="b-ingridients__left-col swiper-slide blank"></div>
+                            <div class="b-ingridients__left-col swiper-slide">
+                                <div class="b-ingridients__item b-ingridients__item_right js-tab-trigger" onmouseover="openIng(event, 'ing3')">
+                                    <div class="b-ingridients__item-img"><img src="img/svg/ing3.svg" alt=""></div>
+                                    <div class="b-ingridients__item-name">Vitamin</div>
+                                </div>
+                            </div>
+                            <div class="b-ingridients__left-col swiper-slide">
+                                <div class="b-ingridients__item b-ingridients__item_left js-tab-trigger" onmouseover="openIng(event, 'ing4')">
+                                    <div class="b-ingridients__item-img"><img src="img/svg/ing4.svg" alt=""></div>
+                                    <div class="b-ingridients__item-name">Active minerals</div>
+                                </div>
+                            </div>
+                            <div class="b-ingridients__left-col swiper-slide">
+                                <div class="b-ingridients__item b-ingridients__item_top js-tab-trigger" onmouseover="openIng(event, 'ing5')">
+                                    <div class="b-ingridients__item-img"><img src="img/svg/ing5.svg" alt=""></div>
+                                    <div class="b-ingridients__item-name">Quince fruit extract</div>
+                                </div>
+                            </div>
+                            <div class="b-ingridients__left-col swiper-slide">
+                                <div class="b-ingridients__item b-ingridients__item_right js-tab-trigger" onmouseover="openIng(event, 'ing6')">
+                                    <div class="b-ingridients__item-img"><img src="img/svg/ing6.svg" alt=""></div>
+                                    <div class="b-ingridients__item-name">Calcium</div>
+                                </div>
+                            </div>
+                            <div class="b-ingridients__left-col swiper-slide blank"></div>
+                            <div class="b-ingridients__left-col swiper-slide">
+                                <div class="b-ingridients__item js-tab-trigger" onmouseover="openIng(event, 'ing7')">
+                                    <div class="b-ingridients__item-img"><img src="img/svg/ing7.svg" alt=""></div>
+                                    <div class="b-ingridients__item-name">Seaweed alginate</div>
+                                </div>
+                            </div>
+                            <div class="b-ingridients__left-col swiper-slide">
+                                <div class="b-ingridients__item b-ingridients__item_right js-tab-trigger" onmouseover="openIng(event, 'ing8')">
+                                    <div class="b-ingridients__item-img"><img src="img/svg/ing8.svg" alt=""></div>
+                                    <div class="b-ingridients__item-name">Lime blossom</div>
+                                </div>
+                            </div>
+                            <div class="b-ingridients__left-col swiper-slide blank"></div>
+                            <div class="b-ingridients__left-col swiper-slide blank"></div>
+                            <div class="b-ingridients__left-col swiper-slide">
+                                <div class="b-ingridients__item b-ingridients__item_right js-tab-trigger" onmouseover="openIng(event, 'ing9')">
+                                    <div class="b-ingridients__item-img"><img src="img/svg/ing9.svg" alt=""></div>
+                                    <div class="b-ingridients__item-name">Camomile extract</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-ingridients__right">
+                    <div class="b-ingridients__right-top">
+                        <div class="b-heading">Ingridients</div>
+                        <a href="" class="b-link">Explore more</a>
+                        <div class="b-ingridients__right-arrow">
+                            <svg width="191" height="62" viewBox="0 0 191 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="websiteClip2">
+                                <path d="M185.524 32.8761C180.928 28.369 175.763 24.4862 170.162 21.327C166.622 19.2379 162.603 17.0795 158.253 14.915C153.609 12.5719 148.809 10.5553 143.887 8.87974C141.234 7.9873 138.525 7.27103 135.778 6.73557C132.933 6.14545 130.041 5.81356 127.137 5.74393C124.162 5.63819 121.185 5.88668 118.269 6.48418C115.314 7.04556 112.449 8.00784 109.752 9.34458L109.312 9.57791C109.43 9.70089 109.578 9.80933 109.711 9.93259C114.713 14.6154 118.065 20.8025 119.263 27.563C119.834 30.9983 119.703 34.5145 118.877 37.8971C118.015 41.441 116.262 44.7036 113.787 47.3736C112.524 48.821 111.04 50.0572 109.389 51.0355C107.548 52.1455 105.479 52.8194 103.34 53.006C101.258 53.1346 99.1724 52.8205 97.2197 52.0842C95.267 51.348 93.4911 50.2061 92.0079 48.7333C89.3224 46.0639 87.6533 42.5338 87.2908 38.7568C86.939 35.2999 87.269 31.8074 88.262 28.4788C89.2102 25.1973 90.6571 22.0823 92.5515 19.2441C94.9238 15.7072 97.8789 12.6022 101.29 10.0622C100.466 9.56705 99.6103 9.12743 98.7284 8.74627C93.5413 6.45967 87.913 5.35936 82.2508 5.52495C76.9699 5.64337 71.7373 6.56368 66.7308 8.25461C62.3512 9.70855 58.1647 11.6938 54.2641 14.1663C50.9975 16.3441 47.933 18.8133 45.108 21.5439C40.6444 25.7697 36.6557 30.4743 33.2133 35.5733C30.8769 38.975 28.8008 42.5497 27.0027 46.2668C25.5795 49.2596 24.6516 51.4766 23.9731 53.2152C23.3592 54.7134 22.9949 55.7181 22.6801 56.4822L23.7001 55.7916C26.6078 53.8229 29.2707 52.0912 31.5516 50.6845C36.1133 47.8861 39.1493 46.2973 39.5156 46.8174C39.8818 47.3375 37.5847 49.6196 33.5232 53.016C31.4921 54.7294 29.0355 56.6914 26.26 58.8286L25.2077 59.6393C24.7586 59.9931 24.28 60.3074 23.7772 60.5788C23.4516 60.7477 23.112 60.8878 22.7623 60.9977C22.3177 61.1383 21.8558 61.216 21.3899 61.2287C20.4304 61.2548 19.4876 60.9728 18.6987 60.4236C17.7381 59.6616 16.9291 58.7246 16.3142 57.6617L14.6886 55.3215C5.91073 42.1743 -0.393252 31.0207 0.670149 30.4216C1.73355 29.8225 9.72462 39.9809 18.5175 53.1284L19.658 54.8708C19.7822 53.9925 19.9639 53.1234 20.2021 52.2692C20.8596 49.7077 21.7099 47.2002 22.7457 44.7682C24.4094 40.7473 26.4381 36.8888 28.8063 33.2416C32.3048 27.7528 36.4348 22.6968 41.1109 18.1781C44.1763 15.1921 47.5125 12.4998 51.0761 10.1363C55.3707 7.37936 59.9922 5.17321 64.8327 3.56932C70.4117 1.68273 76.2459 0.666426 82.1319 0.555846C88.6827 0.386636 95.188 1.69461 101.169 4.38353C102.896 5.15111 104.541 6.09227 106.078 7.19262C106.671 6.87154 107.263 6.55047 107.869 6.27495C110.913 4.82039 114.138 3.78378 117.457 3.19301C120.674 2.60736 123.947 2.39994 127.211 2.57494C130.326 2.71262 133.423 3.13426 136.463 3.83465C139.32 4.44956 142.132 5.25352 144.883 6.24127C149.887 8.05803 154.751 10.2429 159.435 12.7782C163.812 15.1043 167.779 17.3976 171.335 19.6581C176.923 23.0784 181.976 27.3086 186.333 32.2118C187.47 33.5283 188.505 34.9305 189.428 36.4062C190.025 37.4288 190.302 37.9322 190.225 38.0213C190.148 38.1105 188.637 36.0744 185.494 32.8755L185.524 32.8761ZM105.857 13.5141C105.487 13.16 105.087 12.8355 104.687 12.511C101.36 14.9326 98.5066 17.9502 96.2699 21.412C94.6427 23.9439 93.4104 26.7109 92.6159 29.6169C91.8097 32.4613 91.5709 35.4376 91.9132 38.3751C92.2234 41.1682 93.494 43.7653 95.5062 45.7189C96.483 46.6901 97.6526 47.4437 98.9387 47.9307C100.225 48.4178 101.599 48.6272 102.971 48.5455C105.718 48.1071 108.205 46.6574 109.946 44.4787C111.883 42.3366 113.24 39.732 113.889 36.9133C114.512 34.1106 114.566 31.2105 114.046 28.3865C113.542 25.5477 112.576 22.8113 111.189 20.2865C109.814 17.7453 108.022 15.4558 105.887 13.5147" fill=""/>
+                                    </clipPath>
+                                </defs>
+                                <path class="arrow-animate" clip-path="url(#websiteClip2)" d="M185.524 32.8761C180.928 28.369 175.763 24.4862 170.162 21.327C166.622 19.2379 162.603 17.0795 158.253 14.915C153.609 12.5719 148.809 10.5553 143.887 8.87974C141.234 7.9873 138.525 7.27103 135.778 6.73557C132.933 6.14545 130.041 5.81356 127.137 5.74393C124.162 5.63819 121.185 5.88668 118.269 6.48418C115.314 7.04556 112.449 8.00784 109.752 9.34458L109.312 9.57791C109.43 9.70089 109.578 9.80933 109.711 9.93259C114.713 14.6154 118.065 20.8025 119.263 27.563C119.834 30.9983 119.703 34.5145 118.877 37.8971C118.015 41.441 116.262 44.7036 113.787 47.3736C112.524 48.821 111.04 50.0572 109.389 51.0355C107.548 52.1455 105.479 52.8194 103.34 53.006C101.258 53.1346 99.1724 52.8205 97.2197 52.0842C95.267 51.348 93.4911 50.2061 92.0079 48.7333C89.3224 46.0639 87.6533 42.5338 87.2908 38.7568C86.939 35.2999 87.269 31.8074 88.262 28.4788C89.2102 25.1973 90.6571 22.0823 92.5515 19.2441C94.9238 15.7072 97.8789 12.6022 101.29 10.0622C100.466 9.56705 99.6103 9.12743 98.7284 8.74627C93.5413 6.45967 87.913 5.35936 82.2508 5.52495C76.9699 5.64337 71.7373 6.56368 66.7308 8.25461C62.3512 9.70855 58.1647 11.6938 54.2641 14.1663C50.9975 16.3441 47.933 18.8133 45.108 21.5439C40.6444 25.7697 36.6557 30.4743 33.2133 35.5733C30.8769 38.975 28.8008 42.5497 27.0027 46.2668C25.5795 49.2596 24.6516 51.4766 23.9731 53.2152C23.3592 54.7134 22.9949 55.7181 22.6801 56.4822L23.7001 55.7916C26.6078 53.8229 29.2707 52.0912 31.5516 50.6845C36.1133 47.8861 39.1493 46.2973 39.5156 46.8174C39.8818 47.3375 37.5847 49.6196 33.5232 53.016C31.4921 54.7294 29.0355 56.6914 26.26 58.8286L25.2077 59.6393C24.7586 59.9931 24.28 60.3074 23.7772 60.5788C23.4516 60.7477 23.112 60.8878 22.7623 60.9977C22.3177 61.1383 21.8558 61.216 21.3899 61.2287C20.4304 61.2548 19.4876 60.9728 18.6987 60.4236C17.7381 59.6616 16.9291 58.7246 16.3142 57.6617L14.6886 55.3215C5.91073 42.1743 -0.393252 31.0207 0.670149 30.4216C1.73355 29.8225 9.72462 39.9809 18.5175 53.1284L19.658 54.8708C19.7822 53.9925 19.9639 53.1234 20.2021 52.2692C20.8596 49.7077 21.7099 47.2002 22.7457 44.7682C24.4094 40.7473 26.4381 36.8888 28.8063 33.2416C32.3048 27.7528 36.4348 22.6968 41.1109 18.1781C44.1763 15.1921 47.5125 12.4998 51.0761 10.1363C55.3707 7.37936 59.9922 5.17321 64.8327 3.56932C70.4117 1.68273 76.2459 0.666426 82.1319 0.555846C88.6827 0.386636 95.188 1.69461 101.169 4.38353C102.896 5.15111 104.541 6.09227 106.078 7.19262C106.671 6.87154 107.263 6.55047 107.869 6.27495C110.913 4.82039 114.138 3.78378 117.457 3.19301C120.674 2.60736 123.947 2.39994 127.211 2.57494C130.326 2.71262 133.423 3.13426 136.463 3.83465C139.32 4.44956 142.132 5.25352 144.883 6.24127C149.887 8.05803 154.751 10.2429 159.435 12.7782C163.812 15.1043 167.779 17.3976 171.335 19.6581C176.923 23.0784 181.976 27.3086 186.333 32.2118C187.47 33.5283 188.505 34.9305 189.428 36.4062C190.025 37.4288 190.302 37.9322 190.225 38.0213C190.148 38.1105 188.637 36.0744 185.494 32.8755L185.524 32.8761ZM105.857 13.5141C105.487 13.16 105.087 12.8355 104.687 12.511C101.36 14.9326 98.5066 17.9502 96.2699 21.412C94.6427 23.9439 93.4104 26.7109 92.6159 29.6169C91.8097 32.4613 91.5709 35.4376 91.9132 38.3751C92.2234 41.1682 93.494 43.7653 95.5062 45.7189C96.483 46.6901 97.6526 47.4437 98.9387 47.9307C100.225 48.4178 101.599 48.6272 102.971 48.5455C105.718 48.1071 108.205 46.6574 109.946 44.4787C111.883 42.3366 113.24 39.732 113.889 36.9133C114.512 34.1106 114.566 31.2105 114.046 28.3865C113.542 25.5477 112.576 22.8113 111.189 20.2865C109.814 17.7453 108.022 15.4558 105.887 13.5147" fill="none" stroke="#BBD7FF" stroke-width="15"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="b-ingridients__right-item js-tab-content" id="ing1">
+                            <button class="b-ingridients__right-close"></button>
+                            <span>Xylitol</span>
+                            <p>Protects against bacteria and normalizes
+                                the microflora
+                            </p>
+                        </div>
+                        <div class="b-ingridients__right-item js-tab-content" id="ing2">
+                            <button class="b-ingridients__right-close"></button>
+                            <span>Bromelain</span>
+                            <p>Gently removes dental plaque and reduces inflammation</p>
+                        </div>
+                        <div class="b-ingridients__right-item js-tab-content" id="ing3">
+                            <button class="b-ingridients__right-close"></button>
+                            <span>Vitamin E</span>
+                            <p>Provides antioxidant protection</p>
+                        </div>
+                        <div class="b-ingridients__right-item js-tab-content" id="ing4">
+                            <button class="b-ingridients__right-close"></button>
+                            <span>Active minerals</span>
+                            <p>Strengthen the enamel, give the teeth back their shine and improve their colo</p>
+                        </div>
+                        <div class="b-ingridients__right-item js-tab-content" id="ing5">
+                            <button class="b-ingridients__right-close"></button>
+                            <span>Quince fruit extract</span>
+                            <p>Provides mild gum care during teeth eruption period and anti-inflammatory effect</p>
+                        </div>
+                        <div class="b-ingridients__right-item js-tab-content" id="ing6">
+                            <button class="b-ingridients__right-close"></button>
+                            <span>Calcium</span>
+                            <p>Restores natural shine and increases the enamel's resistance to acid</p>
+                        </div>
+                        <div class="b-ingridients__right-item js-tab-content" id="ing7">
+                            <button class="b-ingridients__right-close"></button>
+                            <span>Seaweed alginate</span>
+                            <p>Prevents sore, red gums, minimizes discomfort, protects oral mucosa, binds toxins.</p>
+                        </div>
+                        <div class="b-ingridients__right-item js-tab-content" id="ing8">
+                            <button class="b-ingridients__right-close"></button>
+                            <span>Lime Blossom</span>
+                            <p>Ensures gentle care for teeth while teething, protecting babies gums against sore and red gums</p>
+                        </div>
+                        <div class="b-ingridients__right-item js-tab-content" id="ing9">
+                            <button class="b-ingridients__right-close"></button>
+                            <span>Camomile extract</span>
+                            <p>Increases gum protection level</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="b-ingridients__btn">explore more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="b-complex">
+        <div class="container">
+            <div class="b-complex__top">
+                <div class="b-complex__top-left">Mineralin complex</div>
+                <div class="b-complex__top-logo">
+                    <svg width="329" height="328" viewBox="0 0 329 328" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="h1" d="M4.31072 182.238C5.67102 165.166 10.228 148.775 17.8457 133.539C25.7355 117.76 36.6179 103.885 50.1529 92.3221C63.6879 80.7596 79.0593 72.1897 95.927 66.8845C112.183 61.7154 129.05 59.8109 146.122 61.1712C163.194 62.5315 179.586 67.0885 194.821 74.7062C202.507 78.5151 209.716 83.0721 216.45 88.3092C222.435 92.4582 227.944 97.4233 232.977 103.069C258.823 132.587 262.156 174.144 244.336 206.724C269.501 179.109 281.948 140.477 274.671 100.96C262.496 35.9376 201.146 -7.86406 136.192 1.18194C107.422 6.14704 79.6714 18.7978 56.1382 39.4064C9.13979 80.5555 -8.81619 142.585 4.03866 199.514C3.7666 193.801 3.83462 188.019 4.24271 182.238H4.31072Z" fill="url(#paint0_linear_1166_2413)"/>
+                        <path class="h2" d="M288.001 54.8449C267.189 31.1077 241.071 14.7841 212.981 6.07812C218.082 8.6627 222.979 11.5873 227.74 14.8521C241.819 24.5782 253.722 36.6849 263.108 50.9001C272.834 65.6593 279.363 81.9829 282.628 99.4628C285.893 116.943 285.553 134.559 281.812 151.766C278.139 168.43 271.338 184.006 261.679 198.085C255.422 207.199 248.076 215.429 239.847 222.638C235.358 226.583 230.597 230.188 225.631 233.452C218.49 238.146 211.008 242.09 203.187 245.287C167.343 262.223 123.201 254.197 95.7907 222.91C92.2539 218.897 89.1933 214.612 86.4727 210.259C97.7632 245.899 125.037 276.03 162.922 289.429C194.004 300.447 227.536 298.679 257.326 284.532C267.733 279.567 277.255 273.309 285.689 265.896C300.04 253.381 311.262 237.601 318.608 219.577C338.536 165.029 328.946 101.571 288.001 54.7769V54.8449Z" fill="url(#paint1_linear_1166_2413)"/>
+                        <path class="h3" d="M212.03 304.734C194.414 305.754 177.002 303.306 160.202 297.388C143.403 291.471 128.303 282.425 115.312 270.454C102.73 258.96 92.5953 245.289 85.2497 229.849C77.9041 214.41 73.6191 197.95 72.5989 180.947C72.0548 172.241 72.3948 163.603 73.6191 155.033C75.5916 132.52 85.9979 110.687 104.362 94.5674C121.094 79.9442 141.702 72.5305 162.311 72.0544C125.787 64.0287 90.002 76.5008 55.4591 98.6483C5.33199 141.498 -2.01363 216.042 37.7072 267.802C38.6594 268.958 39.6796 270.182 40.6998 271.339C100.485 339.626 204.276 346.563 272.563 286.778C273.651 285.826 274.74 284.806 275.828 283.853C271.067 286.914 266.102 289.703 260.933 292.151C245.493 299.497 229.034 303.782 212.03 304.802V304.734Z" fill="url(#paint2_linear_1166_2413)"/>
+                        <defs>
+                            <linearGradient class="g1" id="paint0_linear_1166_2413" x1="4.65815" y1="200.832" x2="259.593" y2="61.1433" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.302083" stop-color="#7AB7FF"/>
+                                <stop offset="1" stop-color="#06060A"/>
+                            </linearGradient>
+                            <linearGradient class="g2" id="paint1_linear_1166_2413" x1="91.4458" y1="224.473" x2="317.391" y2="100.669" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.03" stop-color="#202038" stop-opacity="0.8"/>
+                                <stop offset="1" stop-color="#BF77D8"/>
+                            </linearGradient>
+                            <linearGradient class="g3" id="paint2_linear_1166_2413" x1="78.0599" y1="84.6859" x2="175.715" y2="330.001" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2F6549" stop-opacity="0.81"/>
+                                <stop offset="0.0001" stop-opacity="0.81"/>
+                                <stop offset="1" stop-color="#8BFFC1" stop-opacity="0.8"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </div>
+                <div class="b-complex__top-right">
+                    Enzyme and mineral
+                    bio-complex for 360˚
+                    oral care
+                </div>
+            </div>
+            <div class="b-complex__row">
+                <div class="b-complex__row-item i3">
+                    <div class="b-complex__row-img"><img src="img/svg/c1.svg" alt=""></div>
+                    <div class="b-complex__row-top">XYLITOL</div>
+                    <p>Protects against bacteria and normalizes
+                        the microflora composition
+                    </p>
+                </div>
+                <div class="b-complex__row-item i1">
+                    <div class="b-complex__row-img"><img src="img/svg/c2.svg" alt=""></div>
+                    <div class="b-complex__row-top">BROMELAIN</div>
+                    <p>Gently removes dental plaque
+                        and reduces inflammation
+                    </p>
+                </div>
+                <div class="b-complex__row-item i2">
+                    <div class="b-complex__row-img"><img src="img/svg/c3.svg" alt=""></div>
+                    <div class="b-complex__row-top">MINERALS</div>
+                    <p>Strengthen the enamel,
+                        give the teeth back their shine and improve their color
+                    </p>
+                </div>
+            </div>
+            <div class="complex-xs">
+
+                <div class="complex-xs__top">
+                    <div class="complex-xs__text">
+                        <b>Mineralin complex</b>
+                        <span>Enzyme and mineral bio-complex for 360˚oral care</span>
+                    </div>
+                </div>
+                <div class="complex-xs__logo">
+                    <svg width="329" height="328" viewBox="0 0 329 328" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="h1" d="M4.31072 182.238C5.67102 165.166 10.228 148.775 17.8457 133.539C25.7355 117.76 36.6179 103.885 50.1529 92.3221C63.6879 80.7596 79.0593 72.1897 95.927 66.8845C112.183 61.7154 129.05 59.8109 146.122 61.1712C163.194 62.5315 179.586 67.0885 194.821 74.7062C202.507 78.5151 209.716 83.0721 216.45 88.3092C222.435 92.4582 227.944 97.4233 232.977 103.069C258.823 132.587 262.156 174.144 244.336 206.724C269.501 179.109 281.948 140.477 274.671 100.96C262.496 35.9376 201.146 -7.86406 136.192 1.18194C107.422 6.14704 79.6714 18.7978 56.1382 39.4064C9.13979 80.5555 -8.81619 142.585 4.03866 199.514C3.7666 193.801 3.83462 188.019 4.24271 182.238H4.31072Z" fill="url(#paint0_linear_1166_24133)"/>
+                    <path class="h2" d="M288.001 54.8449C267.189 31.1077 241.071 14.7841 212.981 6.07812C218.082 8.6627 222.979 11.5873 227.74 14.8521C241.819 24.5782 253.722 36.6849 263.108 50.9001C272.834 65.6593 279.363 81.9829 282.628 99.4628C285.893 116.943 285.553 134.559 281.812 151.766C278.139 168.43 271.338 184.006 261.679 198.085C255.422 207.199 248.076 215.429 239.847 222.638C235.358 226.583 230.597 230.188 225.631 233.452C218.49 238.146 211.008 242.09 203.187 245.287C167.343 262.223 123.201 254.197 95.7907 222.91C92.2539 218.897 89.1933 214.612 86.4727 210.259C97.7632 245.899 125.037 276.03 162.922 289.429C194.004 300.447 227.536 298.679 257.326 284.532C267.733 279.567 277.255 273.309 285.689 265.896C300.04 253.381 311.262 237.601 318.608 219.577C338.536 165.029 328.946 101.571 288.001 54.7769V54.8449Z" fill="url(#paint1_linear_1166_24133)"/>
+                    <path class="h3" d="M212.03 304.734C194.414 305.754 177.002 303.306 160.202 297.388C143.403 291.471 128.303 282.425 115.312 270.454C102.73 258.96 92.5953 245.289 85.2497 229.849C77.9041 214.41 73.6191 197.95 72.5989 180.947C72.0548 172.241 72.3948 163.603 73.6191 155.033C75.5916 132.52 85.9979 110.687 104.362 94.5674C121.094 79.9442 141.702 72.5305 162.311 72.0544C125.787 64.0287 90.002 76.5008 55.4591 98.6483C5.33199 141.498 -2.01363 216.042 37.7072 267.802C38.6594 268.958 39.6796 270.182 40.6998 271.339C100.485 339.626 204.276 346.563 272.563 286.778C273.651 285.826 274.74 284.806 275.828 283.853C271.067 286.914 266.102 289.703 260.933 292.151C245.493 299.497 229.034 303.782 212.03 304.802V304.734Z" fill="url(#paint2_linear_1166_24133)"/>
+                    <defs>
+                        <linearGradient class="g1" id="paint0_linear_1166_24133" x1="4.65815" y1="200.832" x2="259.593" y2="61.1433" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.302083" stop-color="#7AB7FF"/>
+                            <stop offset="1" stop-color="#06060A"/>
+                        </linearGradient>
+                        <linearGradient class="g2" id="paint1_linear_1166_24133" x1="91.4458" y1="224.473" x2="317.391" y2="100.669" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.03" stop-color="#202038" stop-opacity="0.8"/>
+                            <stop offset="1" stop-color="#BF77D8"/>
+                        </linearGradient>
+                        <linearGradient class="g3" id="paint2_linear_1166_24133" x1="78.0599" y1="84.6859" x2="175.715" y2="330.001" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2F6549" stop-opacity="0.81"/>
+                            <stop offset="0.0001" stop-opacity="0.81"/>
+                            <stop offset="1" stop-color="#8BFFC1" stop-opacity="0.8"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                </div>
+
+                <div class="tab-content">
+                    <div class="complex-xs__tab i2">
+                        <div class="complex-xs__top complex-m">
+                            <div class="complex-xs__text">
+                                <b>Mineralin complex</b>
+                            </div>
+                            <div class="complex-xs__img"><img src="img/svg/c3.svg" alt=""></div>
+                        </div>
+                        <div class="complex-xs__wrap">
+                            <p>
+                                Gently removes dental plaque and reduces inflammation
+                            </p>
+                        </div>
+                    </div>
+                    <div class="complex-xs__tab i3">
+                        <div class="complex-xs__top complex-m">
+                            <div class="complex-xs__text">
+                                <b>Mineralin complex</b>
+                            </div>
+                            <div class="complex-xs__img"><img src="img/svg/c1.svg" alt=""></div>
+                        </div>
+                        <div class="complex-xs__wrap">
+                            <p>
+                                Protects against bacteria and normalizes
+                                the microflora composition
+                            </p>
+                        </div>
+                    </div>
+                    <div class="complex-xs__tab i1">
+                        <div class="complex-xs__top complex-m">
+                            <div class="complex-xs__text">
+                                <b>Mineralin complex</b>
+                            </div>
+                            <div class="complex-xs__img"><img src="img/svg/c2.svg" alt=""></div>
+                        </div>
+                        <div class="complex-xs__wrap">
+                            <p>
+                                Strengthen the enamel,
+                                give the teeth back their shine and improve their color
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="complex-xs__nav">
+                    <ul>
+                        <li class="h2">MINERALS</li>
+                        <li class="h3">XYLITOL</li>
+                        <li class="h1">BROMELAIN</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="b-follow" id="follow">
+        <div class="b-heading">Follow us</div>
+        <div class="b-follow__slider swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="b-follow__slider__item">
+                        <img src="img/f1.webp" alt="">
+                        <div class="b-follow__slider__hover">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                    </div>
+                </div>
+                <div class="swiper-slide"><div class="b-follow__slider__item"><img src="img/f2.webp" alt="">                        <div class="b-follow__slider__hover">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div></div>
+                <div class="swiper-slide"><div class="b-follow__slider__item"><img src="img/f3.webp" alt="">                        <div class="b-follow__slider__hover">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div></div>
+                <div class="swiper-slide"><div class="b-follow__slider__item"><img src="img/f4.webp" alt="">                        <div class="b-follow__slider__hover">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div></div>
+                <div class="swiper-slide"><div class="b-follow__slider__item"><img src="img/f5.webp" alt="">                        <div class="b-follow__slider__hover">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div></div>
+                <div class="swiper-slide"><div class="b-follow__slider__item"><img src="img/f6.webp" alt="">                        <div class="b-follow__slider__hover">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div></div>
+                <div class="swiper-slide"><div class="b-follow__slider__item"><img src="img/f7.webp" alt="">                        <div class="b-follow__slider__hover">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div></div>
+                <div class="swiper-slide"><div class="b-follow__slider__item"><img src="img/f8.webp" alt="">                        <div class="b-follow__slider__hover">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div></div>
+                <div class="swiper-slide"><div class="b-follow__slider__item"><img src="img/f9.webp" alt="">                        <div class="b-follow__slider__hover">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="b-follow__subscribe">
+                <button class="b-follow__subscribe-btn">Subscribe for newsletter</button>
+                <div class="b-follow__subscribe-form">
+                    <form action="">
+                        <input class="b-follow__subscribe-input" type="text" placeholder="Enter your email">
+                    </form>
+                    <div class="b-follow__subscribe-btn b-follow__subscribe-thx"><span>Success!</span> Please check your email to proceed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="b-about" id="about">
+        <div class="container">
+            <div class="b-heading">Why R.O.C.S ?</div>
+            <div class="b-about__row">
+                <div class="b-about__row-item">
+                    <div class="b-about__row-img"><img src="img/about-1.webp" alt=""></div>
+                    <div class="b-about__row-text">
+                        <span>Impactful products</span>
+                    </div>
+                    <div class="b-about__row-hover">
+                        <p>R.O.C.S.® was established in 2005. Our goal is to create innovative oral care products that could make an impact on the industry. We aim to take the effectiveness of oral care to a new level.</p>
+                    </div>
+                </div>
+                <div class="b-about__row-item">
+                    <div class="b-about__row-img"><img src="img/about-2.webp" alt=""></div>
+                    <div class="b-about__row-text">
+                        <span>Natural ingridients</span>
+                    </div>
+                    <div class="b-about__row-hover">
+                        <p>In our products, we use natural ingredients which are an ideal, well thought-out combination and are proved to be effective in the prevention of cavities and gum disease.</p>
+                    </div>
+                </div>
+                <div class="b-about__row-item">
+                    <div class="b-about__row-img"><img src="img/about-3.webp" alt=""></div>
+                    <div class="b-about__row-text"><span>Unique technology</span></div>
+                    <div class="b-about__row-hover">
+                        <p>To provide high effectiveness of natural ingredients in our formulas we have developed a unique cold-brew technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="b-reviews">
+        <div class="b-heading">Customers about us</div>
+        <div class="b-reviews__slider swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="b-reviews__item">
+                        <a href="" class="b-reviews__item-img"><img src="img/reviews-img.webp" alt=""></a>
+                        <div class="b-reviews__item-wrap">
+                            <p>I like it and use regularly. I like the fact that it does not have aggressive chemicals in it. Good product that I enjoy.</p>
+                            <div class="b-reviews__item-stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="b-reviews__item">
+                        <a href="" class="b-reviews__item-img"><img src="img/reviews-img.webp" alt=""></a>
+                        <div class="b-reviews__item-wrap">
+                            <p>I like it and use regularly. I like the fact that it does not have aggressive chemicals in it. Good product that I enjoy.</p>
+                            <div class="b-reviews__item-stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="b-reviews__item">
+                        <a href="" class="b-reviews__item-img"><img src="img/reviews-img.webp" alt=""></a>
+                        <div class="b-reviews__item-wrap">
+                            <p>I like it and use regularly. I like the fact that it does not have aggressive chemicals in it. Good product that I enjoy.</p>
+                            <div class="b-reviews__item-stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="b-buy" id="buy">
+        <div class="container">
+            <div class="b-heading">Where to buy</div>
+            <div class="b-buy__row">
+                <a href="" class="b-buy__row-item">
+                    <img src="img/b1.webp" alt="">
+                </a>
+                <a href="" class="b-buy__row-item">
+                    <img src="img/b2.webp" alt="">
+                </a>
+                <a href="" class="b-buy__row-item">
+                    <img src="img/b3.webp" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="b-footer" id="footer">
+        <div class="container">
+            <div class="b-footer__left">
+                <div class="b-footer__left-nav">
+                    <div class="b-footer__left-title">SHOP NOW</div>
+                    <ul>
+                        <li><a href="">ADUlt Toothpastes</a></li>
+                        <li><a href="">ADULT TOOTHBRUSHES</a></li>
+                        <li><a href="">kIDS TOOTHPASTES</a></li>
+                        <li><a href="">kids TOOTHBRUSHES</a></li>
+                        <li><a href="">MINERAL ORAL CARE</a></li>
+                        <li><a href="">fLOSSES</a></li>
+                        <li><a href="">MOUTHWASHES</a></li>
+                    </ul>
+                </div>
+                <div class="b-footer__left-nav">
+                    <div class="b-footer__left-title">LEARN MORE</div>
+                    <ul>
+                        <li><a href="">About us </a></li>
+                        <li><a href="">Where to buy</a></li>
+                        <li><a href="">Contacts</a></li>
+                        <li><a href="">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="b-footer__left-nav nav-xs">
+                    <ul class="nav-xs">
+                        <li><a href="#promo">Home</a></li>
+                        <li><a href="#ingridients">Ingridients</a></li>
+                        <li><a href="#buy">Where to buy</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#footer">Contacts</a></li>
+                        <li><a href="#follow">Follow</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="b-footer__right">
+                <div class="b-footer__right-top">
+                    <p>
+                        EUROPEAN UNION GLOBAL REPRESENTATION:
+                        UNICOSMETIC OÜ<br/>
+                        A.H. TAMMSAARE TEE 47, 11314, TALLINN, ESTONIA<br/>
+                        CONTACT PERSON: MARIA TERENTJEVA</p>
+                    <a href="tel:(+372) 6517713" class="b-footer__ct b-footer__phone">(+372) 6517713</a>
+                    <a href="mailto:EU@GLOBALDRC.COM" class="b-footer__ct b-footer__mail">EU@GLOBALDRC.COM</a>
+                </div>
+                <div class="b-footer__right-bottom">
+                    <div class="b-footer__social">
+                        <ul>
+                            <li><a href=""><img src="img/svg/fc.svg" alt=""></a></li>
+                            <li><a href=""><img src="img/svg/inst.svg" alt=""></a></li>
+                            <li><a href=""><img src="img/svg/in.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="b-copyright">© 2008-2022 DISTRIBUTION RETAIL COMPANY</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<link href="css/libs.min.css" rel="stylesheet">
+
+<script src="js/libs.min.js"></script>
+<script src="js/script.min.js"></script>
+
+
+
+</body>
+</html>
